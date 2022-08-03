@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Header, Menu, Carrossel } from '../components/index';
+import { Header, Menu, Carrossel, FormPromotion } from '../components/index';
 
 const Home: NextPage = () => {
   return (
@@ -7,6 +7,7 @@ const Home: NextPage = () => {
       <Header />
       <Menu />
       <Carrossel />
+      <FormPromotion />
     </>
   );
 };
