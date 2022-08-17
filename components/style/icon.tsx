@@ -4,3 +4,6 @@ export { ShoppingBasket } from '@styled-icons/material/ShoppingBasket';
 export { UserAlt } from '@styled-icons/fa-solid/UserAlt';
 export { Search } from '@styled-icons/bootstrap/Search';
 export { Bars } from '@styled-icons/fa-solid/Bars';
+export { StarFill } from '@styled-icons/bootstrap/StarFill';
+export { Star } from '@styled-icons/bootstrap/Star';
+export { StarHalf } from '@styled-icons/boxicons-solid/StarHalf';

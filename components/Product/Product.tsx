@@ -26,6 +26,7 @@ export default function Product() {
       </section>
       <C.PromotionProduct>R$ 0,00</C.PromotionProduct>
       <C.PriceProduct>R$ 0,00</C.PriceProduct>
+      <C.PromotionProduct>ou 1x de 0,00 sem juros no cartão</C.PromotionProduct>
       <C.CardProduct />
     </C.Container>
   );

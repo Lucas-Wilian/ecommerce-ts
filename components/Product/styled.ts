@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { Star, StarFill, StarHalf } from '../style/icon';
 
 export const Container = styled.div`
   width: 200px;
-  height: 300px;
+  height: 320px;
   box-shadow: 4px 4px 4px ${({ theme }) => theme.colors.gray};
   margin-bottom: 20px;
   margin-top: 20px;
@@ -35,12 +36,33 @@ export const ImgProduct = styled.div`
   justify-content: center;
 `;
 
-export const NameProduct = styled.div``;
+export const NameProduct = styled.div`
+  margin: 0px;
+  padding: 0px;
+  p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+`;
 
-export const IconStar = styled.div``;
+export const IconStar = styled(StarFill)`
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  color: ${({ theme }) => theme.colors.yellow};
+  flex-shrink: 0;
+`;
 
-export const PromotionProduct = styled.div``;
+export const PromotionProduct = styled.div`
+  font-size: 12px;
+  font-weight: 600;
+`;
 
-export const PriceProduct = styled.div``;
+export const PriceProduct = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+`;
 
 export const CardProduct = styled.div``;
