@@ -5,8 +5,6 @@ export const Container = styled.div`
   width: 200px;
   height: 320px;
   box-shadow: 4px 4px 4px ${({ theme }) => theme.colors.gray};
-  margin-bottom: 20px;
-  margin-top: 20px;
 `;
 
 export const ValuePromotion = styled.div`

@@ -5,6 +5,7 @@ import {
   Carrossel,
   FormPromotion,
   Product,
+  Layout,
 } from '../components/index';
 
 const Home: NextPage = () => {
@@ -14,7 +15,20 @@ const Home: NextPage = () => {
       <Menu />
       <Carrossel />
       <FormPromotion />
-      <Product />
+
+      <Layout
+        title='Promoção Relampago ⚡'
+        product={
+          <>
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+            <Product />
+          </>
+        }
+      />
     </>
   );
 };
