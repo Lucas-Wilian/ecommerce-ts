@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0px 25px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 
 export const Title = styled.h3`
@@ -19,4 +19,5 @@ export const Grid = styled.div`
   flex-direction: row;
   margin: 0;
   justify-content: space-between;
+  z-index: 1000;
 `;
