@@ -6,3 +6,4 @@ export { default as Product } from './Product/Product';
 export { default as Layout } from './Layout/Layout';
 export { default as Banner } from './Banner/Banner';
 export { default as ProductPromotion } from './ProductPromotion/ProductPromotion';
+export { default as ProductItem } from './ProductionItem/ProductItem';

@@ -7,3 +7,5 @@ export { Bars } from '@styled-icons/fa-solid/Bars';
 export { StarFill } from '@styled-icons/bootstrap/StarFill';
 export { Star } from '@styled-icons/bootstrap/Star';
 export { StarHalf } from '@styled-icons/boxicons-solid/StarHalf';
+export { ShareFill } from '@styled-icons/bootstrap/ShareFill';
+export { CreditCard } from '@styled-icons/bootstrap/CreditCard';

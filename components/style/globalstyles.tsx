@@ -26,6 +26,12 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
   } 
+   .swiper-button-prev:hover,
+   .swiper-button-next:hover
+   {
+    background: ${({ theme }) => theme.colors.grayLight};
+    cursor: pointer;
+   }
   .swiper-button-prev:after, .swiper-rtl  {
     content: 'prev';
     font-size: 20px;
