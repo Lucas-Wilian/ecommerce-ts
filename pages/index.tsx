@@ -9,6 +9,18 @@ import {
   Banner,
   ProductPromotion,
 } from '../components/index';
+import 'swiper/css/bundle';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import './styles.css';
+
+// import required modules
+import { Pagination, Navigation } from 'swiper';
 
 const Home: NextPage = () => {
   return (
@@ -21,13 +33,32 @@ const Home: NextPage = () => {
       <Layout
         title='Promoção Relampago ⚡'
         product={
-          <>
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-          </>
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={30}
+            slidesPerGroup={5}
+            loop={true}
+            loopFillGroupWithBlank={false}
+            navigation={true}
+            modules={[Navigation]}
+            className='mySwiper'
+          >
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+          </Swiper>
         }
       />
 
@@ -36,26 +67,64 @@ const Home: NextPage = () => {
       <Layout
         title='Mais vendidos'
         product={
-          <>
-            <ProductPromotion price={true} value='10' />
-            <ProductPromotion price={true} value='10' />
-            <ProductPromotion price={true} value='10' />
-            <ProductPromotion price={true} value='10' />
-            <ProductPromotion price={true} value='10' />
-          </>
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={30}
+            slidesPerGroup={5}
+            loop={true}
+            loopFillGroupWithBlank={false}
+            navigation={true}
+            modules={[Navigation]}
+            className='mySwiper'
+          >
+            <SwiperSlide>
+              <ProductPromotion price={true} value='10' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={true} value='10' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={true} value='10' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={true} value='10' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={true} value='10' />
+            </SwiperSlide>
+          </Swiper>
         }
       />
 
       <Layout
         title='Mais visitados'
         product={
-          <>
-            <ProductPromotion price={false} value='10' />
-            <ProductPromotion price={false} value='10' />
-            <ProductPromotion price={false} value='10' />
-            <ProductPromotion price={false} value='10' />
-            <ProductPromotion price={false} value='10' />
-          </>
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={30}
+            slidesPerGroup={5}
+            loop={true}
+            loopFillGroupWithBlank={false}
+            navigation={true}
+            modules={[Navigation]}
+            className='mySwiper'
+          >
+            <SwiperSlide>
+              <ProductPromotion price={false} value='0' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={false} value='0' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={false} value='0' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={false} value='0' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ProductPromotion price={false} value='0' />
+            </SwiperSlide>
+          </Swiper>
         }
       />
     </>

@@ -4,6 +4,7 @@ import { Star, StarFill, StarHalf } from '../style/icon';
 export const Container = styled.div`
   width: 200px;
   height: 320px;
+  margin-bottom: 10px;
   box-shadow: 4px 4px 4px ${({ theme }) => theme.colors.gray};
 `;
 

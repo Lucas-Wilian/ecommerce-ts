@@ -15,6 +15,35 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  .swiper-button-prev, .swiper-rtl {
+    left: 6px;
+    right: auto;
+    background: ${({ theme }) => theme.colors.white};
+    border-radius: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  } 
+  .swiper-button-prev:after, .swiper-rtl  {
+    content: 'prev';
+    font-size: 20px;
+  }
+  .swiper-button-next{
+      background: ${({ theme }) => theme.colors.white};
+      border-radius: 100%;
+      width: 50px;
+      /* font-size: 19px; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+  .swiper-button-next:after{
+    content: 'next';
+    font-size: 20px;
+  }
 `;
 
 export default GlobalStyle;
