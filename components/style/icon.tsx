@@ -9,3 +9,4 @@ export { Star } from '@styled-icons/bootstrap/Star';
 export { StarHalf } from '@styled-icons/boxicons-solid/StarHalf';
 export { ShareFill } from '@styled-icons/bootstrap/ShareFill';
 export { CreditCard } from '@styled-icons/bootstrap/CreditCard';
+export { ArrowDown } from '@styled-icons/bootstrap/ArrowDown';

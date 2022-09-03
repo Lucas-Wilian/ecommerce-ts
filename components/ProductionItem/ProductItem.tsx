@@ -70,7 +70,25 @@ export default function ProductItem() {
             </C.ProductDetail>
           </C.ContainerProduct>
         </C.ProductItem>
-        <C.ProductPrice>...</C.ProductPrice>
+
+        <C.ProductPrice>
+          <C.PricePromotion>
+            <h4>R$ 0,00</h4>
+            <C.ValuePromotion>
+              <C.IconArrow />
+              0%
+            </C.ValuePromotion>
+          </C.PricePromotion>
+
+          <C.ProductValue>
+            <h4>R$ 0,00</h4>
+            <span>no Pix</span>
+          </C.ProductValue>
+          <C.SectionCard>
+            <C.IconCard />
+            <span>R$ 0,00 em até 0x de 0,00</span>
+          </C.SectionCard>
+        </C.ProductPrice>
       </C.Product>
     </C.Container>
   );

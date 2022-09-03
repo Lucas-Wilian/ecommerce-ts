@@ -1,6 +1,12 @@
 import styled, { css } from 'styled-components';
 
-import { ShareFill, HeartFill, StarFill } from '../style/icon';
+import {
+  ShareFill,
+  HeartFill,
+  StarFill,
+  CreditCard,
+  ArrowDown,
+} from '../style/icon';
 export const Container = styled.div`
   width: 100%;
   height: 480px;
@@ -40,6 +46,7 @@ export const ProductPrice = styled.div`
   height: 100%;
   background: ${({ theme }) => theme.colors.white};
   border-radius: 5px;
+  padding: 10px;
 `;
 
 export const ContainerInfo = styled.div`
@@ -83,6 +90,7 @@ export const CarrosselImg = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-top: 10px;
+
   span {
     width: 52px;
     height: 100%;
@@ -132,6 +140,63 @@ export const IconStar = styled(StarFill)`
   flex-shrink: 0;
 `;
 
+export const PricePromotion = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+
+  h4 {
+    margin: 0;
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: ${({ theme }) => theme.colors.outline};
+    font-weight: bold;
+  }
+`;
+
+export const ValuePromotion = styled.div`
+  width: 50px;
+  height: 100%;
+  background: ${({ theme }) => theme.colors.green};
+  border-radius: 8px;
+  color: ${({ theme }) => theme.colors.white};
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ProductValue = styled.div`
+  width: 100%;
+  height: 60px;
+
+  h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 28px;
+    color: ${({ theme }) => theme.colors.outline};
+  }
+  span {
+    font-weight: bold;
+  }
+`;
+
+export const SectionCard = styled.div`
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 0.5px solid ${({ theme }) => theme.colors.gray};
+  span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+`;
+
 const iconsCSS = css`
   width: 16px;
   height: 16px;
@@ -145,4 +210,17 @@ export const IconHeart = styled(HeartFill)`
 
 export const IconShare = styled(ShareFill)`
   ${iconsCSS}
+`;
+
+export const IconCard = styled(CreditCard)`
+  width: 18px;
+  height: 18px;
+  fill: ${({ theme }) => theme.colors.bluePrimary};
+  flex-shrink: 0;
+`;
+export const IconArrow = styled(ArrowDown)`
+  width: 16px;
+  height: 16px;
+  fill: ${({ theme }) => theme.colors.white};
+  flex-shrink: 0;
 `;
