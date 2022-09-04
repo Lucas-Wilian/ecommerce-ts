@@ -143,7 +143,7 @@ export const IconLogin = styled(UserAlt)`
   ${iconsCSS}
 `;
 
-export const IconShoping = styled(ShoppingBasket)`
+export const IconShopping = styled(ShoppingBasket)`
   width: 30px;
   height: 30px;
   cursor: pointer;

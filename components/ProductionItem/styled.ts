@@ -6,6 +6,7 @@ import {
   StarFill,
   CreditCard,
   ArrowDown,
+  ShoppingBasket,
 } from '../style/icon';
 export const Container = styled.div`
   width: 100%;
@@ -197,6 +198,68 @@ export const SectionCard = styled.div`
   }
 `;
 
+export const ProductQunty = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.outline};
+  }
+  p {
+    font-size: 12px;
+    /* color: ${({ theme }) => theme.colors.outline}; */
+  }
+`;
+
+export const ProductQntyItem = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  background: ${({ theme }) => theme.colors.grayLight};
+  border-radius: 5px;
+  margin: 10px 0px;
+  h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.outline};
+  }
+`;
+
+export const ButtonQnty = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${({ theme }) => theme.colors.white};
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+export const ButtonConfirm = styled.div`
+  width: 100%;
+  height: 50px;
+  background: ${({ theme }) => theme.colors.green};
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 20px;
+  font-weight: 400;
+`;
+
 const iconsCSS = css`
   width: 16px;
   height: 16px;
@@ -210,6 +273,14 @@ export const IconHeart = styled(HeartFill)`
 
 export const IconShare = styled(ShareFill)`
   ${iconsCSS}
+`;
+
+export const IconShopping = styled(ShoppingBasket)`
+  width: 25px;
+  height: 25px;
+  fill: ${({ theme }) => theme.colors.white};
+  flex-shrink: 0;
+  margin-right: 10px;
 `;
 
 export const IconCard = styled(CreditCard)`

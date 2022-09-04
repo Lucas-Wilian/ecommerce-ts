@@ -37,7 +37,7 @@ export default function Header() {
                 <p>+9</p>
               </span>
               <span>
-                <C.IconShoping />
+                <C.IconShopping />
                 <p>3</p>
               </span>
             </C.User>

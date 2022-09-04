@@ -88,6 +88,25 @@ export default function ProductItem() {
             <C.IconCard />
             <span>R$ 0,00 em até 0x de 0,00</span>
           </C.SectionCard>
+
+          <C.ProductQunty>
+            <span>quantidade:</span>
+
+            <C.ProductQntyItem>
+              <C.ButtonQnty>-</C.ButtonQnty>
+              <h5>0 unidade </h5>
+              <C.ButtonQnty>+</C.ButtonQnty>
+            </C.ProductQntyItem>
+
+            <C.ButtonConfirm>
+              <C.IconShopping /> COMPRAR
+            </C.ButtonConfirm>
+
+            <p>
+              Este produto e vendido pela <b>Casa dos Acessorios</b> e entre
+              pela <b>Casa dos Acessorios</b>, que garante a sua compra
+            </p>
+          </C.ProductQunty>
         </C.ProductPrice>
       </C.Product>
     </C.Container>
