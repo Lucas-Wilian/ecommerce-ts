@@ -1,7 +1,26 @@
-import React from 'react'
+import React from 'react';
+import * as C from './styled';
 
 export default function ProductionInformation() {
   return (
-    <div>ProductionInformation</div>
-  )
+    <C.Container>
+      <h2>Informação do produto</h2>
+      <C.ProductInfo>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic Lorem Ipsum is simply dummy
+        text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into
+        electronic Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book. It has survived not only
+        five centuries, but also the leap into electronic
+      </C.ProductInfo>
+    </C.Container>
+  );
 }
