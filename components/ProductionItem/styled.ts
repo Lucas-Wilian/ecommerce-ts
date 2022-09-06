@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-
 import {
   ShareFill,
   HeartFill,
@@ -212,7 +211,7 @@ export const ProductQunty = styled.div`
   }
   p {
     font-size: 12px;
-    /* color: ${({ theme }) => theme.colors.outline}; */
+    color: ${({ theme }) => theme.colors.outline};
   }
 `;
 

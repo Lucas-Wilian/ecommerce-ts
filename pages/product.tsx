@@ -6,6 +6,8 @@ import {
   Layout,
   Product,
   ProductPromotion,
+  ProductInformation,
+  ProductAvaliation,
 } from '../components/index';
 import 'swiper/css/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -82,6 +84,8 @@ const Home: NextPage = () => {
           </Swiper>
         }
       />
+      <ProductInformation />
+      <ProductAvaliation />
     </>
   );
 };
