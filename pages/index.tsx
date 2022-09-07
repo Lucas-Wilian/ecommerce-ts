@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -38,19 +39,39 @@ const Home: NextPage = () => {
             className='mySwiper'
           >
             <SwiperSlide>
-              <Product />
+              <Link href='./product'>
+                <a>
+                  <Product />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Product />
+              <Link href='./product'>
+                <a>
+                  <Product />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Product />
+              <Link href='./product'>
+                <a>
+                  <Product />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Product />
+              <Link href='./product'>
+                <a>
+                  <Product />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <Product />
+              <Link href='./product'>
+                <a>
+                  <Product />
+                </a>
+              </Link>
             </SwiperSlide>
           </Swiper>
         }
@@ -72,19 +93,39 @@ const Home: NextPage = () => {
             className='mySwiper'
           >
             <SwiperSlide>
-              <ProductPromotion price={true} value='10' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={true} value='10' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={true} value='10' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={true} value='10' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={true} value='10' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={true} value='10' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={true} value='10' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={true} value='10' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={true} value='10' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={true} value='10' />
+                </a>
+              </Link>
             </SwiperSlide>
           </Swiper>
         }
@@ -104,19 +145,39 @@ const Home: NextPage = () => {
             className='mySwiper'
           >
             <SwiperSlide>
-              <ProductPromotion price={false} value='0' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={false} value='0' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={false} value='0' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={false} value='0' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={false} value='0' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={false} value='0' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={false} value='0' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={false} value='0' />
+                </a>
+              </Link>
             </SwiperSlide>
             <SwiperSlide>
-              <ProductPromotion price={false} value='0' />
+              <Link href='./product'>
+                <a>
+                  <ProductPromotion price={false} value='0' />
+                </a>
+              </Link>
             </SwiperSlide>
           </Swiper>
         }
