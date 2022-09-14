@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 import * as C from './styled';
+import Link from 'next/link';
 
 export default function Header() {
   // Dentro desse componete e onde o usuario irá:
@@ -13,10 +13,14 @@ export default function Header() {
   return (
     <C.Container>
       <C.Menu>
-        <C.Logo>
-          <C.IconLogo />
-          <p>BLANK</p>
-        </C.Logo>
+        <Link href='/'>
+          <a>
+            <C.Logo>
+              <C.IconLogo />
+              <p>BLANK</p>
+            </C.Logo>
+          </a>
+        </Link>
         <C.Layout>
           <C.Grid>
             <C.SearchInput>
